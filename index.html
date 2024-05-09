@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form action="./show_data.html" method="get">
+        <h2>Formulario</h2>
+
+            <fieldset>
+                <legend>
+                    Ejemplo de Formulario
+                </legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="Apellido">  
+
+                <input type="text" name="Apellido" id="Apellido" placeholder="IngreseApellido">
+
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad" min="18">
+
+
+             </fieldset>
+
+             <fieldset>
+                <legend>Nivel de Educacion</legend>
+
+                <label for="Primario">Primario</label>  
+                <input type="radio" name="Educacion" value="Primario" id="Primario">
+                
+                <label for="Secundario">Secundario</label>
+                <input type="radio" name="Educacion" value="Secundario" id="Secundario">
+
+                <label for="Terciario">Terciario</label>
+                <input type="radio" name="Educacion" value="Secundario" id="Terciario">
+
+             </fieldset>
+
+             <fieldset>
+                <legend> HOBBIES </legend>
+                <label for="Deportes">Deportes</label>
+                <input type="checkbox" name="HOBBIES" value="Deportes" id="Deportes">
+
+                <label for="ActividadFisica">Actividad Fisica</label>
+                <input type="checkbox" name="HOBBIES" value="ActividadFisica" id="ActividadFisica">
+
+                <label for="VideoJuegos">VideoJuegos</label>
+                <input type="checkbox" name="HOBBIES" value="VideoJuegos" id="VideoJuegos">
+
+             </fieldset>
+        
+            <fieldset>
+                <label for="pais">Pais de Residencia</label>
+                <select name="pais" id="pais">
+                <option disabled selected value="">Seleccione un Pais</option>
+
+                <option value="arg">Argentina</option>
+                <option value="urg">Uruguay</option>
+                <option value="chi">Chile</option>
+                <option value="col">Colombia</option>
+            </select>
+            </fieldset>
+            <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
